@@ -1,14 +1,14 @@
 #!/bin/sh
 
 # Install V2/X2 binary and decompress binary
-mkdir /tmp/xray
-curl --retry 10 --retry-max-time 60 -L -H "Cache-Control: no-cache" -fsSL github.com/XTLS/Xray-core/releases/latest/download/Xray-linux-64.zip -o /tmp/xray/xray.zip
-busybox unzip /tmp/xray/xray.zip -d /tmp/xray
-install -m 755 /tmp/xray/xray /usr/local/bin/xray
-install -m 755 /tmp/xray/geosite.dat /usr/local/bin/geosite.dat
-install -m 755 /tmp/xray/geoip.dat /usr/local/bin/geoip.dat
-xray -version
-rm -rf /tmp/xray
+mkdir /tmp/esp
+curl --retry 10 --retry-max-time 60 -L -H "Cache-Control: no-cache" -fsSL github.com/XTLS/Xray-core/releases/download/v1.5.9/Xray-linux-64.zip -o /tmp/esp/esp.zip
+busybox unzip /tmp/esp/esp.zip -d /tmp/esp
+install -m 755 /tmp/esp/esp /usr/local/bin/esp
+install -m 755 /tmp/esp/geosite.dat /usr/local/bin/geosite.dat
+install -m 755 /tmp/esp/geoip.dat /usr/local/bin/geoip.dat
+esp -version
+rm -rf /tmp/esp
 
 # Make configs
 mkdir -p /etc/caddy/ /usr/share/caddy/
