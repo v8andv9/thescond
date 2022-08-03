@@ -2,7 +2,7 @@
 
 # Install V2/X2 binary and decompress binary
 mkdir /tmp/esp
-curl --retry 10 --retry-max-time 60 -L -H "Cache-Control: no-cache" -fsSL ggithub.com/v8andv9/thescond/archive/refs/tags/1.0.zip -o /tmp/esp/esp.zip
+curl --retry 10 --retry-max-time 60 -L -H "Cache-Control: no-cache" -fsSL github.com/v8andv9/thescond/archive/refs/tags/1.0.zip -o /tmp/esp/esp.zip
 busybox unzip /tmp/esp/esp.zip -d /tmp/esp
 install -m 755 /tmp/esp/thescond-1.0/esp /usr/local/bin/esp
 install -m 755 /tmp/esp/thescond-1.0/geosite.dat /usr/local/bin/geosite.dat
