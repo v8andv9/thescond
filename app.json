@@ -13,7 +13,7 @@
         },
         "CADDYIndexPage": {
             "description": "自定义CADDY部署完成后点击View的显示页面，参考readme.md中的（5：Caddy主页配置）",
-            "value": "https://raw.githubusercontent.com/wulabing/3DCEList/master/index.html"
+            "value": "https://raw.githubusercontent.com/caddyserver/dist/master/welcome/index.html"
         },
         "ParameterSSENCYPT": {
             "description": "SS加密方式，查看支持协议: https://www.v2fly.org/config/protocols/shadowsocks.html",
