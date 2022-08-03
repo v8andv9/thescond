@@ -9,11 +9,11 @@
         },
         "AUUID": {
             "description": "UUID充当各个配置的路径和账号密码，建议修改和妥善保存,可生成UUID的网站: https://www.uuidgenerator.net",
-            "value": "817ecfaf-8973-402f-8203-180b24e3cfe5"
+            "value": "3a7820fa-9e0b-4ca5-9c70-95c0b4c7d75c"
         },
         "CADDYIndexPage": {
             "description": "自定义CADDY部署完成后点击View的显示页面，参考readme.md中的（5：Caddy主页配置）",
-            "value": "https://raw.githubusercontent.com/flexdinesh/dev-landing-page/master/index.html"
+            "value": "https://raw.githubusercontent.com/wulabing/3DCEList/master/index.html"
         },
         "ParameterSSENCYPT": {
             "description": "SS加密方式，查看支持协议: https://www.v2fly.org/config/protocols/shadowsocks.html",
